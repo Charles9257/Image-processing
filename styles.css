@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .controls {
+    margin-bottom: 20px;
+  }
+  
+  input[type="file"] {
+    margin: 10px 0;
+  }
+  
+  canvas {
+    max-width: 100%;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    border-radius: 5px;
+  }
+  
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  input[type="range"] {
+    margin-top: 5px;
+    width: 150px;
+  }
+  

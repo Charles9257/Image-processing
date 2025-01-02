@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Processing App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Image Processing App</h1>
+    <div class="controls">
+      <input type="file" id="imageUpload" accept="image/*" />
+      <button id="downloadImage" disabled>Download Processed Image</button>
+      <button id="removeBackground" disabled>Remove Background</button>
+    </div>
+    <canvas id="imageCanvas"></canvas>
+    <div class="filters">
+      <label>
+        Grayscale:
+        <input type="range" id="grayscale" min="0" max="100" value="0">
+      </label>
+      <label>
+        Brightness:
+        <input type="range" id="brightness" min="0" max="200" value="100">
+      </label>
+      <label>
+        Contrast:
+        <input type="range" id="contrast" min="0" max="200" value="100">
+      </label>
+      <label>
+        Width:
+        <input type="number" id="resizeWidth" placeholder="Width" />
+      </label>
+      <label>
+        Height:
+        <input type="number" id="resizeHeight" placeholder="Height" />
+      </label>
+      <label>
+        Background Color:
+        <input type="color" id="bgColor" />
+      </label>
+      <button id="cropImage">Crop Image</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
